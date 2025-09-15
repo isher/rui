@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>计算器</title>
+<link href="../Websites/ruiyarisheng/Templates/youhome/Static/css/baojiaqi/jjq.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+<form id="testform" action="/Zhuangxiu/addBaojiao.html">
+<div class="bg">
+ <div class="msgtxt"> 已有<span id="message">1568</span>位业主成功获取人工精准报价 </div> 
+
+  <!--户型-室-->
+  <div class="huxing1 abs" id="shi"> 
+  	<div class="v" data-v="1" id="shiv">1</div> 
+  	<div class="shilist">
+    	<span data-v="1">1</span>
+    	<span data-v="2">2</span>
+    	<span data-v="3">3</span>
+    	<span data-v="4">4</span>
+    	<span data-v="5">5</span>
+    </div>
+  </div>
+  <!--户型-厅-->
+  <div class="huxing1 huxing2 abs"> 
+  	<div class="v" data-v="1" id="ting">1</div> 
+  	<div class="shilist">
+    	<span data-v="1">1</span>
+    	<span data-v="2">2</span>
+    	<span data-v="3">3</span> 
+    </div>
+  </div>
+  <!--户型-卫-->
+  <div class="huxing1 huxing3 abs"> 
+  	<div class="v" data-v="1" id="wei">1</div> 
+  	<div class="shilist">
+    	<span data-v="1">1</span>
+    	<span data-v="2">2</span>
+    	<span data-v="3">3</span> 
+    </div>
+  </div>
+  <!--面积-->
+  <div class="mianji abs"><input type="text" name="mianji"  placeholder="请填写套内面积" id="mj" onkeyup="this.value=this.value.replace(/\D/g,'');" maxlength="3"></div>
+  <!--装修城市-->
+  <div class="city abs"> 
+  	<div class="v" id="citys" data-v="0">请选择装修城市</div> 
+  	<div class="shilist">
+	    <span data-v="3400">北京</span>        <div class="clear"></div>
+    </div>
+  </div>
+  <!--小区信息-->
+  <div class="xiaoqu abs"><input type="text" name="loupan"  placeholder="请填写小区名称" id="xq"></div>
+  <!--风格-->
+  <div class="fengge abs">
+  	<p id="fengge" style="display:none;"></p>
+	<span class="i1 ioff abs icon">现代风格</span><span class="i2 ioff abs icon">欧式经典</span><span class="i3 ioff abs icon">中式风格</span><span class="i4 ioff abs icon">乡村田园</span><span class="i5 ioff abs icon">其它风格</span>  </div>
+  <!--套系-->
+<div class="taoxi abs">
+  	<p id="taoxi" style="display:none;"></p>
+	<span class="i1 ioff abs icon" >两居</span><span class="i2 ioff abs icon" >三居</span><span class="i3 ioff abs icon" >多居</span><span class="i4 ioff abs icon" >别墅</span><span class="i5 ioff abs icon" >办公室</span>  	 
+  </div>
+  <!--称呼-->
+  <div class="chenghu abs"><input type="text" name="name" placeholder="先生/女士" id="chenghu"></div>
+  <!--手机-->
+  <div class="shouji abs"><input type="text" name="phone"  placeholder="请输入手机号码" id="shouji"></div>
+
+
+  <!--价格显示-->
+  <div id="jiage" class=" abs">0</div> 
+  <!--报价按钮-->
+  <div  class="bjbtn abs" id="savebtn">智能系统报价</div> 
+  <div  class="bjbtnrg abs"><a href="" target="_blank">人工精准报价</a></div> 
+  
+</div>
+
+
+
+<input type="text" name="content" id="content">
+
+
+</body>
+</html>
